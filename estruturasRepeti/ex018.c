@@ -12,22 +12,12 @@ int main(){
     maior = num;
     menor = num;
 
-    if (0 < num && num > 1000){
-        printf("VALOR NÃO VÁLIDO.\n");
-        return 0;
-    }
-
     system("cls");
 
     while (num >= 0){
         printf("PARA ENCERRAR DIGITE -1.\n");
         printf("DIGITE OUTRO NÚMERO INTEIRO POSITIVO: \n => ");
         scanf("%d", &num);
-
-        if (num >= 1000){
-            printf("VALOR INVÁLIDO.\n");
-            continue;
-        }
 
         if (num == -1){
             continue;
