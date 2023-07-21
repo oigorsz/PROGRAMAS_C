@@ -25,7 +25,7 @@ int main(){
         linha = (posicao - 1)/3;
         coluna = (posicao - 1)%3;
 
-        if(m[linha][coluna] == 'X' || m[linha][coluna] == 'O'){
+        if(m[linha][coluna] == 'X' || m[linha][coluna] == 'O' || 0 < posicao || posicao > 9 ){
             jogadas--;
             continue;
         }
